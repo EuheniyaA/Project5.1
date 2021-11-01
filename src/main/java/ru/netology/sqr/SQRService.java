@@ -2,16 +2,17 @@ package ru.netology.sqr;
 
 public class SQRService {
 
-  int count =0;
-  public int numberOfSQR(int number1, int number2) {
-    for (int i = 10; i <= 99; i=i+1) {
-      if (number1 <= i * i && i * i <= number2) {
-        count++;
-      }
+
+    public int numberOfSqr(int lowerRange, int upperRange) {
+        int count = 0;
+        for (int i = 10; i <= 99; i = i + 1) {
+            if (lowerRange <= i * i && i * i <= upperRange) {
+                count++;
+            }
+        }
+        System.out.println("Количество подходящих чисел: " + count);
+        return count;
     }
-    System.out.println("Количество подходящих чисел: " + count);
-    return count;
-  }
 }
 
 

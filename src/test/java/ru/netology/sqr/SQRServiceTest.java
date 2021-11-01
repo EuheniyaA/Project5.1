@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class SQRServiceTest {
 
     @ParameterizedTest
-    @CsvSource(value={"range1, 0, 99, 0",
+    @CsvSource(value = {"range1, 0, 99, 0",
             "range2, 0, 100, 1",
             "range3, 100, 1000, 22",
             "range4, 100, 9801, 90",
@@ -16,9 +16,9 @@ class SQRServiceTest {
             "range6, 400, 600, 5",
             "range7, 9800, 9801, 1",
             "range8, 9802, 10000, 0"})
-        void shouldNumberOfSQR(String testName, int number1, int number2, int expected) {
+    void shouldNumberOfSqr(String testName, int lowerRange, int upperRange, int expected) {
         SQRService service = new SQRService();
-        int actual=service.numberOfSQR(number1, number2);
-assertEquals(expected, actual);
+        int actual = service.numberOfSqr(lowerRange, upperRange);
+        assertEquals(expected, actual);
     }
 }

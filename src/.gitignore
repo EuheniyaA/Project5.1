@@ -5,6 +5,8 @@ HELP.md
 build /
 цель /
 
+target/
+
 # ## СТС ###
 .apt_generated
 .classpath
