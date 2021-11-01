@@ -5,7 +5,7 @@ HELP.md
 build /
 цель /
 
-target/
+target
 
 # ## СТС ###
 .apt_generated
